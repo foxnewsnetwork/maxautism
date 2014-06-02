@@ -1,0 +1,11 @@
+@import 'shared/variables';
+@import 'shared/common';
+@import 'autism/shared/main';
+
+body {
+  @include shared-common;
+}
+
+main {
+  @include autism-shared-main;
+}
