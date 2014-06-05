@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+gem 'livescript-rails'
 gem 'ember-rails', '~>0.15.0'
 gem 'emblem-rails', '~>0.2.1'
 gem 'ember-source', '~>1.5.0'

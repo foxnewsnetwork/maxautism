@@ -1,0 +1,83 @@
+@mixin autism-templates-index {
+  .thought-bubble {
+    @include border-radius(30px);
+    padding: 25px 15px 25px 15px;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  .retarded-child {
+    margin-top: 20px;
+  }
+  .massively-buffered {
+    margin-bottom: 125px;
+  }
+  .bottom-padded {
+    padding-bottom: 75px;
+  }
+  .border-bottom {
+    @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+  }
+  .on-the-edge {
+    margin-bottom: -60px;
+    text-align: center;
+    i {
+      @extend .fa-2x;
+    }
+    .rounded {
+      @include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);   
+      @include border-radius(25px);
+      background: #fff;
+      padding: 15px 10px 10px 10px;
+    }
+  }
+  .tagline {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-action {
+    margin-bottom: 25px;
+  }
+  .autistic-content {
+    margin-top: 25px;
+  }
+  .autists {
+    .list-group-item {
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      display: flex;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+    .avatar-box {
+      @include box-flex(1);
+      max-height: 75px;
+      max-width: 75px;
+      img {
+        height: 75px;
+        width: 75px;
+      }
+    }
+    .text-box {
+      @include box-flex(4);
+      padding-left: 15px;
+      font-size: 16px;
+    }
+  }
+  .pagination {
+    text-align: center;
+    width: 100%;
+    li {
+      font-size: 14px;
+    }
+    li:not(:last-child) {
+      &:after {
+        content: " | ";
+      }
+    }
+  }
+}

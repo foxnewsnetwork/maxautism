@@ -9,3 +9,26 @@ body {
 main {
   @include autism-shared-main;
 }
+
+header {
+  position: fixed;
+  left: 15px;
+  top: 35%;
+  a {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ddd;
+    i {
+      @extend .fa-3x;
+    }
+  }
+}
+
+footer {
+  padding-top: 25px;
+  bottom: 0px;
+  .jumbotron {
+    margin-bottom: 0px;
+  }
+}

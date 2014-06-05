@@ -8,4 +8,5 @@
 
 # for more details see: http://emberjs.com/guides/application/
 window.Maxautism = Ember.Application.create()
-$('.no-script').hide()
+$(document).ready ->
+  $('.no-script').hide()
