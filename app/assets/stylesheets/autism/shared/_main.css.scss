@@ -1,7 +1,11 @@
 @import 'autism/templates/index';
+@import 'autism/templates/autisms';
 
 @mixin autism-shared-main {
   #templates-index {
     @include autism-templates-index;
-  }  
+  }
+  #templates-autisms {
+    @include autism-templates-autisms;
+  }
 }

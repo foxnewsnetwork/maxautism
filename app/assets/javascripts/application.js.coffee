@@ -1,5 +1,7 @@
 #= require jquery
 #= require jquery_ujs
+#= require jquery.mousewheel
+#= require bootstrap
 #= require handlebars
 #= require ember
 #= require ember-data

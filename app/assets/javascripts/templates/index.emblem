@@ -1,4 +1,4 @@
-#templates-index
+#templates-index  
   .jumbotron.border-bottom
     .container
       .row.massively-buffered
@@ -20,53 +20,5 @@
       .on-the-edge
         span.rounded
           i.fa-chevron-down
-          
-  .container
-    .row
-      .one-whole.align-center
-        h2.tagline
-          | making autism accessible for everyone (or similar tagline)
-
-    .row
-      .one-whole.align-center.main-action
-        button class="btn btn-lg btn-info"
-          i.fa-comment-o
-
-    .row
-      .one-whole.align-center
-        button class="btn btn-default"
-          i.fa-twitter
-        button class="btn btn-default"
-          i.fa-facebook
-        button class="btn btn-default"
-          i.fa-tumblr
-        button class="btn btn-default"
-          i.fa-wechat
-        button class="btn btn-default"
-          i.fa-google-plus
-
-    .row.autistic-content
-      .one-quarter.align-right
-        button class="btn btn-default"
-          i.fa-chevron-left
-      .two-quarters
-        .list-group.autists
-          .list-group-item
-            .avatar-box
-              img src='images/boy.png'
-            .text-box
-              | some text here
-          .list-group-item
-            .avatar-box
-              img src='images/boy.png'
-            .text-box
-              | some text here
-
-        ol.pagination
-          li 0
-          li 1
-          li 2
-
-      .one-quarter.align-left
-        button class="btn btn-default"
-          i.fa-chevron-right
+            
+    

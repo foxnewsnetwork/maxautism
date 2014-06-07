@@ -1,0 +1,29 @@
+#templates-autisms
+  .container
+    .row
+      .one-whole.align-center
+        h2.tagline
+          | making autism accessible for everyone (or similar tagline)
+
+    .row
+      .one-whole.align-center.main-action
+        button class="btn btn-lg btn-info"
+          i.fa-comment-o
+
+    .row
+      .one-whole.align-center
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-facebook
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-linux
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-google
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-google-plus
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-github-alt
+        button class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Not yet implemented!"
+          i.fa-tumblr
+
+    .row.autistic-content
+      == render "boards" boards

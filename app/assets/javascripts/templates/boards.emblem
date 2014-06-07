@@ -1,0 +1,23 @@
+.one-quarter.align-right
+  button class="btn btn-default"
+    i.fa-chevron-left
+    
+.two-quarters
+  .list-group.autists
+    each board in boards
+      .list-group-item
+        .avatar-box
+          img src='images/boy.png'
+        .content-box
+          .speaker-box
+            == board.speaker
+          .text-box== board.thoughts
+
+  ol.pagination
+    li 0
+    li 1
+    li 2
+
+.one-quarter.align-left
+  button class="btn btn-default"
+    i.fa-chevron-right

@@ -1,16 +1,17 @@
+header.hidden
+  link-to 'index'
+    i.fa-home
+  a href='#templates-autisms'
+    i.fa-database
+
 main#ember-main
-  header
-    link-to 'index'
-      i.fa-home
-    link-to 'index'
-      i.fa-database
-    link-to 'index'
-      i.fa-legal
   == outlet
-  footer
-    .jumbotron
-      .container
-        .row
-          .one-whole.align-center
-            h4 Maximum Autism is made by the following autists
-            h5 Some name
+  == outlet content
+
+footer
+  .jumbotron
+    .container
+      .row
+        .one-whole.align-center
+          h4 Maximum Autism is made by the following autists
+          h5 Some name

@@ -1,3 +1,3 @@
-class Autism::HomeController < Autism::ApplicationController
+class Autism::HomeController < Autism::BaseController
   def index; end
 end

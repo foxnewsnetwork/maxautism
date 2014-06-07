@@ -5,3 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'ffaker'
+
+def board_params
+  {
+    speaker: Faker::Name.first_name,
+    thoughts: Faker::Lorem.sentence
+  }
+end
+
+10.times do
+  Autism::Board.create! board_params
+end

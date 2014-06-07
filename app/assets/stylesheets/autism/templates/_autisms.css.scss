@@ -1,0 +1,62 @@
+@mixin autism-templates-autisms {
+  .tagline {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-action {
+    margin-bottom: 25px;
+  }
+  .autistic-content {
+    margin-top: 25px;
+  }
+  .autists {
+    .list-group-item {
+      @include display-box;
+      @include box-orient(horizontal);
+      @include box-align(stretch);
+      display: flex;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+    .avatar-box {
+      @include box-flex(1);
+      max-height: 75px;
+      max-width: 75px;
+      img {
+        height: 75px;
+        width: 75px;
+      }
+    }
+    .text-box {
+      max-width: 85%;
+    }
+    .speaker-box {
+      @extend .colon;
+      @extend .bold;
+      font-size: 14px;
+    }
+    .content-box {
+      @include box-flex(4);
+      padding-left: 15px;
+      font-size: 16px;
+      max-height: 75px;
+      overflow: hidden;
+    }
+  }
+  .pagination {
+    text-align: center;
+    width: 100%;
+    li {
+      font-size: 14px;
+    }
+    li:not(:last-child) {
+      &:after {
+        content: " | ";
+      }
+    }
+  }
+}
