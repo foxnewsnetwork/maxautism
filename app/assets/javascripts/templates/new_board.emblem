@@ -1,0 +1,26 @@
+.modal-dimbackground
+  .fixed-dead-center
+    .container
+      .row
+        .one-quarter.modal-frame
+          form-for model=board_params action="submit"
+            .row
+              .one-whole
+                .form-group
+                  .input-group
+                    span.input-group-addon
+                      i.fa-user
+                    input type="text" name="speaker" class="form-control"
+                .form-group
+                  .input-group
+                    span.input-group-addon
+                      i.fa-comment-o
+                    textarea name="thoughts" class="form-control"
+            .row
+              .one-quarter
+                button click="submit target='view'" class="btn btn-lg btn-primary"
+                  i.fa-check
+
+              .one-quarter.offset-two-quarters.align-right
+                button type="reset" click="closeModal" class="btn btn-lg btn-danger"
+                  i.fa-times

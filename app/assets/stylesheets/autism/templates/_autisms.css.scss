@@ -35,7 +35,6 @@
       max-width: 85%;
     }
     .speaker-box {
-      @extend .colon;
       @extend .bold;
       font-size: 14px;
     }
@@ -46,17 +45,18 @@
       max-height: 75px;
       overflow: hidden;
     }
+    .date-box {
+      font-size: 10px;
+      color: #aaa;
+    }
   }
-  .pagination {
+  .pagination-holder {
     text-align: center;
     width: 100%;
+  }
+  .pagination {
     li {
       font-size: 14px;
-    }
-    li:not(:last-child) {
-      &:after {
-        content: " | ";
-      }
     }
   }
 }

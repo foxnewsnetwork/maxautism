@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'autism/home#index'
   namespace :autism do
-    resources :boards, only: [:index]
+    resources :boards, only: [:index, :create, :show]
+    resources :meta_boards, only: [:show]
   end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

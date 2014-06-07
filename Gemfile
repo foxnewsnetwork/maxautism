@@ -16,6 +16,7 @@ gem "haml", "~> 4.0.5"
 gem "haml-rails", "~>0.5.3"
 gem 'decent_exposure', '~> 2.3.1'
 gem 'ffaker', ">=1.20.0"
+gem "kaminari", "~> 0.15.1"
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -27,6 +28,7 @@ gem 'animation', '~> 0.1.alpha.3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'compass-rails', '~> 1.1.7'
 gem 'jquery-ui-rails', '~> 4.2.0'
+gem 'underscore-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views

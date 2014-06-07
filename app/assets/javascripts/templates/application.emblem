@@ -5,8 +5,11 @@ header.hidden
     i.fa-database
 
 main#ember-main
-  == outlet
-  == outlet content
+  == partial "index"
+  == partial "autisms"
+
+section#modal
+  == outlet modal
 
 footer
   .jumbotron

@@ -10,13 +10,18 @@
           img src='images/boy.png'
         .content-box
           .speaker-box
-            == board.speaker
-          .text-box== board.thoughts
+            = board.speaker
+            span.date-box.predash
+              = board.created_at
+          .text-box
+            = board.thoughts
 
-  ol.pagination
-    li 0
-    li 1
-    li 2
+  .pagination-holder
+    ol.pagination
+      each page in pages
+        li
+          link-to "page" page
+            = page
 
 .one-quarter.align-left
   button class="btn btn-default"

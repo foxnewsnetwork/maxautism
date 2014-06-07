@@ -7,7 +7,7 @@
 
     .row
       .one-whole.align-center.main-action
-        button class="btn btn-lg btn-info"
+        button click="newAutismModal" class="btn btn-lg btn-info"
           i.fa-comment-o
 
     .row
@@ -26,4 +26,4 @@
           i.fa-tumblr
 
     .row.autistic-content
-      == render "boards" boards
+      == outlet
